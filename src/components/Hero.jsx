@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="flex">
+    <section id="home" className="flex">
       <div className="w-1/2 aspect-7/5 overflow-hidden bg-[url('/banner-image.png')] bg-center "></div>
       <div className="w-1/2 flex flex-col gap-10 items-center justify-center p-10 bg-[url('/banner-bg.png')] text-gray-700 ">
         <h1 className="text-8xl font-bold text-center  ">
@@ -14,6 +14,6 @@ export default function Hero() {
           ACQUISTALA SUBITO!
         </button>
       </div>
-    </div>
+    </section>
   );
 }

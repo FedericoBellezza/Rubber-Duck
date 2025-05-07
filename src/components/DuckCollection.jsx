@@ -1,6 +1,9 @@
 export default function DuckCollection() {
   return (
-    <section className="w-full bg-gray-100 py-20 flex flex-col gap-10">
+    <section
+      id="collection"
+      className="w-full bg-gray-100 py-20 flex flex-col gap-10"
+    >
       <h2 className="text-6xl font-bold text-center">
         La collezione di paperelle
       </h2>

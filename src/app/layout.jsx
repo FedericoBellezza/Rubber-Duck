@@ -197,6 +197,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
+        <script src="/src/lib/script.js"></script>
       </body>
     </html>
   );

@@ -42,7 +42,7 @@ export default function Reviews() {
   }
 
   return (
-    <section className="p-10  px-50">
+    <section id="reviews" className="p-10  px-50">
       <h1 className="text-6xl font-bold text-center">
         Cosa ne pensano i nostri sviluppatori
       </h1>

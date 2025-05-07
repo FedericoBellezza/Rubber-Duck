@@ -1,6 +1,9 @@
 export default function Characteristics() {
   return (
-    <section className="flex justify-between gap-10 p-10 text-balance  my-20 px-30">
+    <section
+      id="characteristics"
+      className="flex justify-between gap-10 p-10 text-balance  my-20 px-30"
+    >
       <div className="flex flex-col gap-20  justify-between items-center w-1/4">
         <div>
           <h2 className="text-4xl font-bold text-center ">
