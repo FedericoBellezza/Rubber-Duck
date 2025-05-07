@@ -59,7 +59,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="bg-white px-10 py-3  justify-between items-center fixed top-0 w-full z-100 hidden lg:flex ">
+      <nav className="bg-white px-10 py-3  justify-between items-center fixed top-0 w-full z-100 hidden lg:flex shadow-xl">
         <img
           className="cursor-pointer"
           onClick={() => scrollToItem("home")}
