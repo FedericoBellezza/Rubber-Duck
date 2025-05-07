@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <nav className="bg-white px-10 py-3 flex justify-between items-center sticky top-0 w-full">
+    <nav className="bg-white px-10 py-3 flex justify-between items-center sticky top-0 w-full z-100">
       <img src="/logo.png" alt="duck logo" />
       <ul className="flex text-lg gap-10 text-gray-500">
         <li>Home</li>
