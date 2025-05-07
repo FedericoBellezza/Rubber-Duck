@@ -9,10 +9,10 @@ export function FAQsAccordion() {
   return (
     <Accordion type="single" collapsible className="w-full ">
       <AccordionItem value="item-1">
-        <AccordionTrigger className={"text-3xl"}>
+        <AccordionTrigger className={"lg:text-3xl text-lg"}>
           Come posso utilizzare la paperella di gomma per il debugging?
         </AccordionTrigger>
-        <AccordionContent className={"text-xl"}>
+        <AccordionContent className={"lg:text-xl text-md"}>
           Il metodo della paperella di gomma è una tecnica di debugging semplice
           ma efficace. <br />
           Consiste nell'esporre il problema ad alta voce, spiegandolo a un
@@ -26,11 +26,11 @@ export function FAQsAccordion() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
-        <AccordionTrigger className={"text-3xl"}>
+        <AccordionTrigger className={"lg:text-3xl text-lg"}>
           Quali sono i vantaggi di usare una paperella di gomma per i
           programmatori?
         </AccordionTrigger>
-        <AccordionContent className={"text-xl"}>
+        <AccordionContent className={"lg:text-xl text-md"}>
           Il metodo della paperella di gomma offre ai programmatori un modo
           semplice ma potente per risolvere problemi di codice. <br /> Spiegare
           ad alta voce il funzionamento del programma a un oggetto inanimato
@@ -42,11 +42,11 @@ export function FAQsAccordion() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
-        <AccordionTrigger className={"text-3xl"}>
+        <AccordionTrigger className={"lg:text-3xl text-lg"}>
           Posso usare la paperella di gomma indipendentemente dal linguaggio di
           programmazione?
         </AccordionTrigger>
-        <AccordionContent className={"text-xl"}>
+        <AccordionContent className={"lg:text-xl text-md"}>
           Assolutamente sì, la paperella di gomma è efficace con qualsiasi
           linguaggio di programmazione. <br /> Il suo potere non dipende dalla
           sintassi o dal paradigma di programmazione, ma dal meccanismo
@@ -59,11 +59,11 @@ export function FAQsAccordion() {
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-4">
-        <AccordionTrigger className={"text-3xl"}>
+        <AccordionTrigger className={"lg:text-3xl text-lg"}>
           Quanto dettagliatamente devo spiegare il mio codice alla paperella di
           gomma?
         </AccordionTrigger>
-        <AccordionContent className={"text-xl"}>
+        <AccordionContent className={"lg:text-xl text-md"}>
           Devi spiegare il codice alla paperella di gomma con lo stesso livello
           di dettaglio che useresti con un collega che non conosce il tuo
           progetto. <br /> Descrivi ogni passaggio logico, le variabili
