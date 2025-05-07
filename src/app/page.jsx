@@ -1,3 +1,4 @@
+"use client";
 import Characteristics from "@/components/Characteristics";
 import DuckCollection from "@/components/DuckCollection";
 import FAQs from "@/components/FAQs";
