@@ -42,17 +42,17 @@ export default function Reviews() {
   }
 
   return (
-    <section id="reviews" className="p-10  px-50">
-      <h1 className="text-6xl font-bold text-center">
+    <section id="reviews" className="p-10  lg:px-50">
+      <h1 className="lg:text-6xl text-2xl font-bold text-center">
         Cosa ne pensano i nostri sviluppatori
       </h1>
 
       <Swiper
         spaceBetween={200}
-        slidesPerView={3}
+        slidesPerView={1}
         onSlideChange={(swiper) => handleSlideChange(swiper)}
         onSwiper={(swiper) => console.log(swiper)}
-        className="text-center text-2xl text-balance my-15 "
+        className="text-center lg:text-2xl text-lg text-balance my-15"
       >
         <SwiperSlide>
           <div className="flex flex-col gap-5">
@@ -138,8 +138,15 @@ export default function Reviews() {
             </span>
           </div>
         </SwiperSlide>
-
-        <div className="flex justify-center mt-10 gap-1">
+        <div className="text-center flex items-center justify-center gap-3 text-sm mt-5">
+          Scorri per vedere altre recensioni
+          <img
+            className="w-8 inline rotate-180"
+            src="https://static.vecteezy.com/system/resources/previews/017/785/206/non_2x/left-arrow-icon-on-transparent-background-free-png.png"
+            alt=""
+          />
+        </div>
+        <div className=" justify-center mt-10 gap-1 hidden lg:flex">
           <PrevButton />
           <NextButton />
         </div>
