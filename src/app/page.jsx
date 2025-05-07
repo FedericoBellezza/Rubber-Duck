@@ -1,12 +1,13 @@
 import Characteristics from "@/components/Characteristics";
 import Hero from "@/components/Hero";
-import Image from "next/image";
+import Reviews from "@/components/Reviews";
 
 export default function Home() {
   return (
-    <div>
+    <div className="text-gray-700">
       <Hero />
       <Characteristics />
+      <Reviews />
     </div>
   );
 }
