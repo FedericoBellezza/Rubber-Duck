@@ -3,7 +3,7 @@
 Benvenuto nel repository **landing-page-product**, un progetto di landing page per promuovere la **Paperella di Gomma per il Debugging**.  
 Questa pagina è stata progettata per offrire una presentazione accattivante e funzionale del prodotto, ottimizzata sia per dispositivi mobili che desktop, secondo le specifiche del prototipo fornito.
 
-## [Link al sito](rubber-duck-lemon.vercel.app)
+## [Link al sito](https://rubber-duck-lemon.vercel.app)
 
 <div style="display: flex; gap: 15px;">
 <img src="./public/banner-image.png" alt="Paperella di Debugging" height="270" width="270">
