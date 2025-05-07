@@ -4,13 +4,13 @@ export default function DuckCollection() {
       id="collection"
       className="w-full bg-gray-100 py-20 flex flex-col gap-10"
     >
-      <h2 className="text-6xl font-bold text-center">
+      <h2 className="lg:text-6xl text-2xl font-bold text-center">
         La collezione di paperelle
       </h2>
-      <h3 className="text-2xl  text-center">
+      <h3 className="lg:text-2xl px-10  text-center">
         Una paperella per ogni stile di programmazione
       </h3>
-      <div className="flex gap-20 justify-center items-center px-30">
+      <div className="flex flex-col lg:flex-row gap-20 justify-center items-center lg:px-30 px-5">
         <div className="flex flex-col gap-5">
           <img src="/product-item1.png" alt="" />
           <span className="text-2xl">⭐⭐⭐⭐⭐</span>
