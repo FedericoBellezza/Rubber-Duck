@@ -5,3 +5,20 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.poppins {
+  font-family: var(--font-poppins);
+}
+
+.montserrat {
+  font-family: var(--font-montserrat);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Poppins !important;
+}
