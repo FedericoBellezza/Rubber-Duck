@@ -3,10 +3,12 @@
 Benvenuto nel repository **landing-page-product**, un progetto di landing page per promuovere la **Paperella di Gomma per il Debugging**.  
 Questa pagina è stata progettata per offrire una presentazione accattivante e funzionale del prodotto, ottimizzata sia per dispositivi mobili che desktop, secondo le specifiche del prototipo fornito.
 
+## [Link al sito](rubber-duck-lemon.vercel.app)
+
 <div style="display: flex; gap: 15px;">
-<img src="./public/banner-image.png" alt="Paperella di Debugging" height="270" width="270" style="border-radius: 50%; overflow: hidden; display: inline-block;">
-<img src="https://www.thesoapopera.com/cdn/shop/products/The-Soap-Opera-Rubber-Ducks-Colors-Yellow_02cd30bb-0dbd-4fdc-8d7c-6ee1be5a04e8.jpg?v=1613344659" alt="Paperella di Debugging" height="270" width="270" style="border-radius: 50%; overflow: hidden; display: inline-block;">
-<img src="./public/product-item1.png" alt="Paperella di Debugging" height="270" width="270" style="border-radius: 50%; overflow: hidden; display: inline-block;">
+<img src="./public/banner-image.png" alt="Paperella di Debugging" height="270" width="270">
+<img src="https://www.thesoapopera.com/cdn/shop/products/The-Soap-Opera-Rubber-Ducks-Colors-Yellow_02cd30bb-0dbd-4fdc-8d7c-6ee1be5a04e8.jpg?v=1613344659" alt="Paperella di Debugging" height="270" width="270">
+<img src="./public/product-item1.png" alt="Paperella di Debugging" height="270" width="270">
 </div>
 
 ## 📝 Descrizione del Progetto
@@ -32,3 +34,5 @@ Questa landing page è stata realizzata come esercizio di sviluppo front-end, co
 ## ✨ Prototipo
 
 Il layout è stato realizzato basandosi su un prototipo fornito, completo di dettagli su colori, tipografia e sequenza degli elementi.
+
+<img src="./public/desktop.png" alt="Desktop screenshot" >
