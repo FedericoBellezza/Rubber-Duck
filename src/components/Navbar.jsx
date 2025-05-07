@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState(null);
+  const [menuOpen, setMenuOpen] = useState(false);
   const handleScroll = () => {
     // console.log("finestra: " + window.scrollY);
 
@@ -44,87 +45,181 @@ export default function Navbar() {
   };
   window.addEventListener("scroll", handleScroll);
 
-  // handleScroll();
-
   // function to scroll to a section
   function scrollToItem(itemId) {
+    setMenuOpen(false);
     const element = document.getElementById(itemId);
     const posizione = element.offsetTop - 100;
     console.log(posizione);
 
     window.scrollTo({ top: posizione, behavior: "smooth" });
   }
-  return (
-    <nav className="bg-white px-10 py-3 flex justify-between items-center sticky top-0 w-full z-100">
-      <img
-        className="cursor-pointer"
-        onClick={() => scrollToItem("home")}
-        src="/logo.png"
-        alt="duck logo"
-      />
-      <ul className="flex text-lg gap-10 text-gray-500">
-        <li
-          className={`cursor-pointer transition  ${
-            activeSection === "home"
-              ? "text-blue-600 hover:text-blue-800"
-              : "hover:text-slate-700"
-          } `}
-          onClick={() => scrollToItem("home")}
-        >
-          Home
-        </li>
 
-        <li
-          className={`cursor-pointer transition  ${
-            activeSection === "characteristics"
-              ? "text-blue-600 hover:text-blue-800"
-              : "hover:text-slate-700"
-          } `}
-          onClick={() => scrollToItem("characteristics")}
-        >
-          I punti di forza
-        </li>
-        <li
-          className={`cursor-pointer transition  ${
-            activeSection === "reviews"
-              ? "text-blue-600 hover:text-blue-800"
-              : "hover:text-slate-700"
-          } `}
-          onClick={() => scrollToItem("reviews")}
-        >
-          Recensioni
-        </li>
-        <li
-          className={`cursor-pointer transition  ${
-            activeSection === "collection"
-              ? "text-blue-600 hover:text-blue-800"
-              : "hover:text-slate-700"
-          } `}
-          onClick={() => scrollToItem("collection")}
-        >
-          Peperelle
-        </li>
-        <li
-          className={`cursor-pointer transition  ${
-            activeSection === "faqs"
-              ? "text-blue-600 hover:text-blue-800"
-              : "hover:text-slate-700"
-          } `}
-          onClick={() => scrollToItem("faqs")}
-        >
-          FAQs
-        </li>
-        <li
-          className={`cursor-pointer transition  ${
-            activeSection === "newsletter"
-              ? "text-blue-600 hover:text-blue-800"
-              : "hover:text-slate-700"
-          } `}
-          onClick={() => scrollToItem("newsletter")}
-        >
-          Newsletter
-        </li>
-      </ul>
-    </nav>
+  return (
+    <>
+      <nav className="bg-white px-10 py-3  justify-between items-center sticky top-0 w-full z-100 hidden lg:flex">
+        <img
+          className="cursor-pointer"
+          onClick={() => scrollToItem("home")}
+          src="/logo.png"
+          alt="duck logo"
+        />
+        <ul className="flex text-lg gap-10 text-gray-500">
+          <li
+            className={`cursor-pointer transition  ${
+              activeSection === "home"
+                ? "text-blue-600 hover:text-blue-800"
+                : "hover:text-slate-700"
+            } `}
+            onClick={() => scrollToItem("home")}
+          >
+            Home
+          </li>
+
+          <li
+            className={`cursor-pointer transition  ${
+              activeSection === "characteristics"
+                ? "text-blue-600 hover:text-blue-800"
+                : "hover:text-slate-700"
+            } `}
+            onClick={() => scrollToItem("characteristics")}
+          >
+            I punti di forza
+          </li>
+          <li
+            className={`cursor-pointer transition  ${
+              activeSection === "reviews"
+                ? "text-blue-600 hover:text-blue-800"
+                : "hover:text-slate-700"
+            } `}
+            onClick={() => scrollToItem("reviews")}
+          >
+            Recensioni
+          </li>
+          <li
+            className={`cursor-pointer transition  ${
+              activeSection === "collection"
+                ? "text-blue-600 hover:text-blue-800"
+                : "hover:text-slate-700"
+            } `}
+            onClick={() => scrollToItem("collection")}
+          >
+            Peperelle
+          </li>
+          <li
+            className={`cursor-pointer transition  ${
+              activeSection === "faqs"
+                ? "text-blue-600 hover:text-blue-800"
+                : "hover:text-slate-700"
+            } `}
+            onClick={() => scrollToItem("faqs")}
+          >
+            FAQs
+          </li>
+          <li
+            className={`cursor-pointer transition  ${
+              activeSection === "newsletter"
+                ? "text-blue-600 hover:text-blue-800"
+                : "hover:text-slate-700"
+            } `}
+            onClick={() => scrollToItem("newsletter")}
+          >
+            Newsletter
+          </li>
+        </ul>
+      </nav>
+
+      {/* mobile navbar */}
+      <nav className="bg-white px-5 py-2   justify-between items-center fixed top-0 w-full z-100 flex lg:hidden">
+        <img className="h-13" src="/logo.png" alt="" />
+        <h2>Rubber Ducks</h2>
+        <svg onClick={() => setMenuOpen(true)} className="w-10 h-10">
+          <use href="#navbar-icon"></use>
+        </svg>
+      </nav>
+      <div
+        className={`z-150 bg-black opacity-70 fixed top-0 w-full h-screen ${
+          !menuOpen && "hidden"
+        }`}
+      ></div>
+      <div
+        className={`fixed flex justify-end w-full top-0 z-200 right-0 transition ${
+          !menuOpen && "translate-x-full"
+        }`}
+      >
+        <ul className="p-10 flex flex-col w-8/10 h-screen text-lg gap-10 text-gray-500 bg-white">
+          <div className="flex justify-between">
+            <img className="w-15" src="/logo.png" alt="" />
+            <img
+              onClick={() => setMenuOpen(false)}
+              className="w-5 h-5"
+              src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Transparent_X.png"
+              alt=""
+            />
+          </div>
+          <li
+            className={`cursor-pointer transition  ${
+              activeSection === "home"
+                ? "text-blue-600 hover:text-blue-800"
+                : "hover:text-slate-700"
+            } `}
+            onClick={() => scrollToItem("home")}
+          >
+            Home
+          </li>
+
+          <li
+            className={`cursor-pointer transition  ${
+              activeSection === "characteristics"
+                ? "text-blue-600 hover:text-blue-800"
+                : "hover:text-slate-700"
+            } `}
+            onClick={() => scrollToItem("characteristics")}
+          >
+            I punti di forza
+          </li>
+          <li
+            className={`cursor-pointer transition  ${
+              activeSection === "reviews"
+                ? "text-blue-600 hover:text-blue-800"
+                : "hover:text-slate-700"
+            } `}
+            onClick={() => scrollToItem("reviews")}
+          >
+            Recensioni
+          </li>
+          <li
+            className={`cursor-pointer transition  ${
+              activeSection === "collection"
+                ? "text-blue-600 hover:text-blue-800"
+                : "hover:text-slate-700"
+            } `}
+            onClick={() => scrollToItem("collection")}
+          >
+            Peperelle
+          </li>
+          <li
+            className={`cursor-pointer transition  ${
+              activeSection === "faqs"
+                ? "text-blue-600 hover:text-blue-800"
+                : "hover:text-slate-700"
+            } `}
+            onClick={() => scrollToItem("faqs")}
+          >
+            FAQs
+          </li>
+          <li
+            className={`cursor-pointer transition  ${
+              activeSection === "newsletter"
+                ? "text-blue-600 hover:text-blue-800"
+                : "hover:text-slate-700"
+            } `}
+            onClick={() => scrollToItem("newsletter")}
+          >
+            Newsletter
+          </li>
+        </ul>
+      </div>
+    </>
   );
 }

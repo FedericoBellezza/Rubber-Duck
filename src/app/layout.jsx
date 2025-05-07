@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased montserrat  `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased montserrat   `}
       >
         <svg xmlns="http://www.w3.org/2000/svg" className="hidden">
           <symbol
@@ -194,10 +194,12 @@ export default function RootLayout({ children }) {
             />
           </symbol>
         </svg>
-        <Navbar />
-        {children}
-        <Footer />
-        <script src="/src/lib/script.js"></script>
+        <div className="max-w-screen overflow-x-hidden">
+          <Navbar />
+          {children}
+          <Footer />
+          <script src="/src/lib/script.js"></script>
+        </div>
       </body>
     </html>
   );
