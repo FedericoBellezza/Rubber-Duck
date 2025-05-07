@@ -2,7 +2,7 @@ export default function NewsLetter() {
   return (
     <section className="flex flex-col gap-10 items-center py-20 bg-gray-100">
       <h2 className="text-6xl font-bold">Iscriviti per rimanere aggiornato</h2>
-      <span>
+      <span className="text-2xl">
         Iscriviti alla nostra newsletter per rimanere aggiornato su sconti e
         novità
       </span>
