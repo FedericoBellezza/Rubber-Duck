@@ -134,7 +134,7 @@ export default function Navbar() {
       {/* mobile navbar */}
       <nav className="bg-white px-5 py-2   justify-between items-center fixed top-0 w-full z-100 flex lg:hidden">
         <img className="h-13" src="/logo.png" alt="" />
-        <h2>Rubber Ducks</h2>
+        <h2 className="font-bold">Rubber Ducks</h2>
         <svg onClick={() => setMenuOpen(true)} className="w-10 h-10">
           <use href="#navbar-icon"></use>
         </svg>

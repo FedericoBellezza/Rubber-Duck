@@ -42,7 +42,7 @@ export default function Reviews() {
 
   return (
     <section id="reviews" className="p-10  lg:px-50">
-      <h1 className="lg:text-6xl text-2xl font-bold text-center">
+      <h1 className="lg:text-6xl text-3xl font-bold text-center">
         Cosa ne pensano i nostri sviluppatori
       </h1>
 
