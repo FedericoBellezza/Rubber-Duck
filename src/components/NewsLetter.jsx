@@ -2,14 +2,16 @@ export default function NewsLetter() {
   return (
     <section
       id="newsletter"
-      className="flex flex-col gap-10 items-center py-20 bg-gray-100"
+      className="flex flex-col gap-10 items-center justify-between px-5 text-center py-20 bg-gray-100"
     >
-      <h2 className="text-6xl font-bold">Iscriviti per rimanere aggiornato</h2>
-      <span className="text-2xl">
+      <h2 className="lg:text-6xl text-3xl font-bold">
+        Iscriviti per rimanere aggiornato
+      </h2>
+      <span className="lg:text-2xl text-lg">
         Iscriviti alla nostra newsletter per rimanere aggiornato su sconti e
         novità
       </span>
-      <form className="w-1/5" action="">
+      <form className="lg:w-1/5 w-full px-5" action="">
         <div className="flex">
           <input
             name="email"
@@ -25,7 +27,7 @@ export default function NewsLetter() {
         </div>
         <hr />
       </form>
-      <div className="flex gap-10">
+      <div className="flex lg:gap-10 gap-3">
         <svg className="w-13 h-13 text-green-500 hover:text-green-600 transition cursor-pointer border rounded-full p-2">
           <use href="#facebook"></use>
         </svg>

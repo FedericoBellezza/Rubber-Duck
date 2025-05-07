@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <section className="flex text-center justify-center items-center py-10 bg-white">
+    <section className="flex text-center justify-center items-center py-10 bg-white lg:text-md text-sm px-10">
       <h4>
         © 2025 Rubber Ducks. Designed by{" "}
         <span

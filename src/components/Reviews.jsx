@@ -53,6 +53,20 @@ export default function Reviews() {
         onSlideChange={(swiper) => handleSlideChange(swiper)}
         onSwiper={(swiper) => console.log(swiper)}
         className="text-center lg:text-2xl text-lg text-balance my-15"
+        breakpoints={{
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        }}
       >
         <SwiperSlide>
           <div className="flex flex-col gap-5">

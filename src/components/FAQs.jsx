@@ -27,7 +27,7 @@ export default function FAQs() {
           <h3 className="lg:text-3xl text-xl font-bold">Spedizione gratuita</h3>
           <span className="text-lg">Dal magazzino alla scrivania</span>
         </div>
-        <div className="flex flex-col gap-3 lg:px-20 px-5 items-center  lg:w-1/3">
+        <div className="flex flex-col gap-3 lg:px-20 px-5 items-center w-full lg:w-1/3">
           <svg className="lg:h-25 lg:w-25 h-15 w-15 text-blue-500">
             <use href="#handiplast"></use>
           </svg>
