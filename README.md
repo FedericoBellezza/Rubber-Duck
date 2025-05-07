@@ -4,9 +4,9 @@ Benvenuto nel repository **landing-page-product**, un progetto di landing page p
 Questa pagina è stata progettata per offrire una presentazione accattivante e funzionale del prodotto, ottimizzata sia per dispositivi mobili che desktop, secondo le specifiche del prototipo fornito.
 
 <div style="display: flex; gap: 15px;">
-<img src="./public/banner-image.png" alt="Paperella di Debugging" height="270" width="270" style="border-radius: 15px; margin-right:15px;">
-<img src="https://www.thesoapopera.com/cdn/shop/products/The-Soap-Opera-Rubber-Ducks-Colors-Yellow_02cd30bb-0dbd-4fdc-8d7c-6ee1be5a04e8.jpg?v=1613344659" alt="Paperella di Debugging" height="270" width="270" style="border-radius: 15px; margin-right:15px;">
-<img src="./public/product-item1.png" alt="Paperella di Debugging" height="270" width="270" style="border-radius: 15px;">
+<img src="./public/banner-image.png" alt="Paperella di Debugging" height="270" width="270" style="border-radius: 50%; overflow: hidden; display: inline-block;">
+<img src="https://www.thesoapopera.com/cdn/shop/products/The-Soap-Opera-Rubber-Ducks-Colors-Yellow_02cd30bb-0dbd-4fdc-8d7c-6ee1be5a04e8.jpg?v=1613344659" alt="Paperella di Debugging" height="270" width="270" style="border-radius: 50%; overflow: hidden; display: inline-block;">
+<img src="./public/product-item1.png" alt="Paperella di Debugging" height="270" width="270" style="border-radius: 50%; overflow: hidden; display: inline-block;">
 </div>
 
 ## 📝 Descrizione del Progetto
