@@ -1,3 +1,4 @@
+"use client";
 import { FAQsAccordion } from "./FAQsAccordion";
 
 export default function FAQs() {
