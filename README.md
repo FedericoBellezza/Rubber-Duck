@@ -35,4 +35,10 @@ Questa landing page è stata realizzata come esercizio di sviluppo front-end, co
 
 Il layout è stato realizzato basandosi su un prototipo fornito, completo di dettagli su colori, tipografia e sequenza degli elementi.
 
+# Desktop
+
 <img src="./public/desktop.png" alt="Desktop screenshot" >
+
+# Mobile
+
+<img src="./public/mobile.png" alt="Mobile screenshot" >
