@@ -1,10 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
   const handleScroll = () => {
     // console.log("finestra: " + window.scrollY);
 
@@ -43,9 +47,7 @@ export default function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   };
-  window.addEventListener("scroll", handleScroll);
 
-  // function to scroll to a section
   function scrollToItem(itemId) {
     setMenuOpen(false);
     const element = document.getElementById(itemId);
