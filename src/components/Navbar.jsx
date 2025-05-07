@@ -140,8 +140,8 @@ export default function Navbar() {
         </svg>
       </nav>
       <div
-        className={`z-150 bg-black opacity-70 fixed top-0 w-full h-screen ${
-          !menuOpen && "hidden"
+        className={`z-150 bg-black  fixed top-0 w-full h-screen transition duration-500 lg:hidden ${
+          menuOpen ? "opacity-70 right-0" : "opacity-0 translate-x-full"
         }`}
       ></div>
       <div
