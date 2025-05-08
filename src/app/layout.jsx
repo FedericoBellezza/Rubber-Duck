@@ -199,7 +199,7 @@ export default function RootLayout({ children }) {
         </svg>
         <div className="max-w-screen overflow-x-hidden">
           <Navbar />
-          <div className="lg:mt-20 mt-15">{children}</div>
+          <div className="lg:mt-20 mt-17">{children}</div>
           <Footer />
           <script src="/src/lib/script.js"></script>
         </div>

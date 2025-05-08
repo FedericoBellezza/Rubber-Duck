@@ -3,8 +3,12 @@
 import { useEffect, useState } from "react";
 
 export default function Navbar() {
-  const [activeSection, setActiveSection] = useState(null);
+  const [activeSection, setActiveSection] = useState("home");
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);

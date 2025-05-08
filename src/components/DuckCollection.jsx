@@ -12,7 +12,7 @@ export default function DuckCollection() {
       </h3>
       <div className="flex flex-col lg:flex-row lg:gap-20 gap-20 justify-center items-center lg:px-30 px-5">
         <div className="flex flex-col lg:gap-5 gap-2">
-          <div className="rounded-2xl shadow-xl border border-gray-500 overflow-hidden">
+          <div className="rounded-2xl shadow-xl border-8 border-slate-800 overflow-hidden">
             <img
               className=" hover:scale-108 hover:rotate-3 transition"
               src="/product-item1.png"
@@ -42,7 +42,7 @@ export default function DuckCollection() {
           </div>
         </div>
         <div className="flex flex-col lg:gap-5 gap-2">
-          <div className="rounded-2xl shadow-xl border border-gray-500 overflow-hidden">
+          <div className="rounded-2xl shadow-xl border-8 border-slate-800 overflow-hidden">
             <img
               className=" hover:scale-108 hover:rotate-3 transition"
               src="/product-item2.png"
@@ -72,7 +72,7 @@ export default function DuckCollection() {
           </div>
         </div>
         <div className="flex flex-col lg:gap-5 gap-2 ">
-          <div className="rounded-2xl shadow-xl border border-gray-500 overflow-hidden">
+          <div className="rounded-2xl shadow-xl border-8 border-slate-800 overflow-hidden">
             <img
               className=" hover:scale-108 hover:rotate-5 transition"
               src="/product-item3.png"
